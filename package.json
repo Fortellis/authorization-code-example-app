@@ -2,7 +2,7 @@
   "name": "create-proxy-server-for-react-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "axios": "^0.21.1",
