@@ -22,42 +22,11 @@ let code;
 class App extends Component {
   constructor() {
     super();
-    this.getMerchandisableVehicles = this.getMerchandisableVehicles.bind(this);
     this.state = {
       loading: false,
       vehicles: [],
     };
   }
-
-  getMerchandisableVehicles() {
-    // set the loading state in case the API call is slow
-    this.setState({loading: true});
-
-    // make an API call to a fortellis API
-    // supply the previously acquired token in the Authorization header
-    fetch(
-      'https://api.fortellis.io/sales/inventory/v1/merchandisable-vehicles/',
-      {
-        headers: {
-          'Subscription-Id': subscription_id,
-          Authorization: `Bearer ${token}`,
-        },
-      }
-    )
-      .then(response => {
-        return response.json();
-      })
-      .then(json => {
-        if (json.items) {
-          this.setState({vehicles: json.items, loading: false});
-        }
-      })
-      .catch(err => {
-        this.setState({loading: false});
-        alert('API call failed! Error: ' + err);
-      });
-  }
-
   componentWillMount() {
     // if the URL contains a token, grab it and hide it from the user
     code =
