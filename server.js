@@ -11,7 +11,9 @@ const path = require('path');
 const axios = require('axios');
 
 const CLIENT_ID = "Your API Key";
-const CLIENT_Secret = "Your API Secret";
+const CLIENT_SECRET = "Your API Secret";
+
+const token = new Buffer(CLIENT_ID + ':' + CLIENT_SECRET).toString('base64');
 
 
 app.use(bodyParser.json({extended: true}), express.json());
