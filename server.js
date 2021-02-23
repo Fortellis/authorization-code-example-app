@@ -10,6 +10,10 @@ const path = require('path');
 
 const axios = require('axios');
 
+const CLIENT_ID = "Your API Key";
+const CLIENT_Secret = "Your API Secret";
+
+
 app.use(bodyParser.json({extended: true}), express.json());
 
 app.post('/token', (req, res) => {
@@ -33,7 +37,7 @@ app.post('/token', (req, res) => {
         headers: {
           accept: 'application/json',
           authorization:
-            'Basic UkY...',
+            `Basic ${token}`,
           'content-type': 'application/x-www-form-urlencoded',
         },
       }
