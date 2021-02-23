@@ -1,5 +1,5 @@
 {
-  "name": "React Authorization Code Flow",
+  "name": "ReactAuthorizationCodeFlow",
   "version": "0.1.0",
   "description": "This is the react app that the express server serves for the authorization code flow.",
   "keywords": [
