@@ -33,7 +33,7 @@ app.post('/token', (req, res) => {
         headers: {
           accept: 'application/json',
           authorization:
-            'Basic TE9...',
+            'Basic UkY...',
           'content-type': 'application/x-www-form-urlencoded',
         },
       }

@@ -6,7 +6,7 @@ import axios from 'axios';
 // replace this with the client_id of your fortellis app
 const client_id = 'place_holder_client_ID';
 // replace this with the redirect url of your fortellis app
-const redirect_uri = encodeURIComponent('http://localhost:5000/');
+const redirect_uri = encodeURIComponent('placeholder_URL');
 
 // the Subscription-Id represents the dealership context of an API call
 // in this example, we call the merchandisable vehicles API to get the vehicles available for sale in a given dealership

@@ -1,7 +1,7 @@
 {
-  "name": "ImplictFlow-ExampleApp",
+  "name": "React Authorization Code Flow",
   "version": "0.1.0",
-  "description": "A simple single-page react app that acquires a Fortellis OAuth token using the implicit grant and uses it to make an API call",
+  "description": "This is the react app that the express server serves for the authorization code flow.",
   "keywords": [
     "fortellis",
     "oauth",
@@ -9,10 +9,10 @@
     "implicit",
     "react"
   ],
-  "author": "ian.woolf@cdk.com",
+  "author": "Nathan Sandberg",
   "homepage": ".",
-  "repository": "https://github.com/Fortellis/ImplictFlow-ExampleApp",
-  "bugs": "https://github.com/Fortellis/ImplictFlow-ExampleApp/issues",
+  "repository": "https://github.com/Fortellis/authorization-code-example-app",
+  "bugs": "https://github.com/Fortellis/authorization-code-example-app/issues",
   "license": "MIT",
   "private": true,
   "dependencies": {
