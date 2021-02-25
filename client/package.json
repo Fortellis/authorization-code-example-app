@@ -1,0 +1,30 @@
+{
+  "name": "ReactAuthorizationCodeFlow",
+  "version": "0.1.0",
+  "description": "This is the react app that the express server serves for the authorization code flow.",
+  "keywords": [
+    "fortellis",
+    "oauth",
+    "token",
+    "implicit",
+    "react"
+  ],
+  "author": "Nathan Sandberg",
+  "homepage": ".",
+  "repository": "https://github.com/Fortellis/authorization-code-example-app",
+  "bugs": "https://github.com/Fortellis/authorization-code-example-app/issues",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.21.1",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "react-scripts": "1.1.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
